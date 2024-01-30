@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec
 from utils import Plot
 from model_variables import Variable, ControlVariable, EnergyVariable, AttitudeQuaternion, Wind, Actuation
-
+from model_variables import ConstraintException
 
 class PyFly:
     REQUIRED_VARIABLES = ["alpha", "beta", "roll", "pitch", "yaw", "omega_p", "omega_q", "omega_r", "position_n",
